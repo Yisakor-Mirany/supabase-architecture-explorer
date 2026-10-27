@@ -1,16 +1,104 @@
-# React + Vite
+# Supabase Architecture Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React application designed to explore and explain the software architecture of Supabase.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project analyzes Supabase's software architecture, including its major components, technologies, architectural style, and service relationships.
 
-## React Compiler
+The application provides an interactive dashboard and architecture diagram to help users understand how Supabase works.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Interactive architecture diagram
+- 10 architectural components
+- Component search functionality
+- Category filtering
+- Detailed component information
+- Responsive design
+- Accessible component interactions
+- Automated testing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React
+- JavaScript
+- Vite
+- CSS
+- Vitest
+- React Testing Library
+
+## Architecture Overview
+
+Supabase uses a service-oriented architecture built around PostgreSQL.
+
+### Major Components
+
+- PostgreSQL
+- PostgREST
+- Supabase Auth
+- Supabase Storage
+- Supabase Realtime
+- Edge Functions
+- API Gateway
+- Supavisor
+- postgres-meta
+- Supabase Studio
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Yisakor-Mirany/supabase-architecture-explorer.git
+```
+
+Navigate into the project:
+
+```bash
+cd supabase-architecture-explorer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Testing
+
+Run automated tests:
+
+```bash
+npm run test:run
+```
+
+The application includes seven automated tests covering:
+
+1. Dashboard rendering
+2. Search functionality
+3. Category filtering
+4. Invalid search handling
+5. Component details
+6. Escape key functionality
+7. Architecture diagram rendering
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Architecture Documentation
+
+See [ARCHITECTURE.md](./ARCHITECTURE.md) for the detailed architectural analysis and verification audit.
+
+## Disclaimer
+
+This is an independent educational project and is not affiliated with Supabase.
